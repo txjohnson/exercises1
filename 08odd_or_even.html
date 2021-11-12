@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+<h1>Check if a number is odd or even</h1>
+<div>What is the number: <input type="number" id="num"></div>
+<div><input type="button" value="Calculate It" onclick="calc()"></div>
+<div id="result"></div>
+<script>
+    function calc() {
+        let num = parseInt(document.getElementById ("num").value);
+        let result = document.getElementById ("result");
+
+        if (num % 2 == 0) {
+            result.innerText = `${num} is even`;    
+        }
+        else {
+            result.innerText = `${num} is odd`;    
+        }
+    }
+</script>
+</body>

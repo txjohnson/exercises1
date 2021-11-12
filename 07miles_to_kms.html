@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+<h1>Convert miles to kilometers</h1>
+<div>How many miles: <input type="number" id="miles"></div>
+<div><input type="button" value="Calculate It" onclick="calc()"></div>
+<div id="result"></div>
+<script>
+    let factor = 0.621371;
+
+    function calc() {
+        let miles = parseFloat(document.getElementById ("miles").value);
+        let kms   = miles / factor;
+        let result = document.getElementById ("result");
+        result.innerText = `${miles} miles = ${kms} kilometers`;    
+    }
+</script>
+</body>
